@@ -2,3 +2,7 @@ __pycache__/
 .env
 .venv/
 private_reports/
+audio_cache/
+translation_cache.json
+test_api.py
+test_output.txt
