@@ -2,6 +2,8 @@ import pandas as pd
 
 ranges = pd.read_csv("data/reference_ranges.csv")
 people = pd.read_excel("samples/Blood_reports_data_base.xlsx")
+people["Gender"] = people["Gender"].str.strip().str.title()
+people["Name"] = people["Name"].str.strip()
 
 
 def check_value(test_name, value, gender):
